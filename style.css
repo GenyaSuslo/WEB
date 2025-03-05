@@ -2,3 +2,24 @@
 {
     background-color:aquamarine;
 }
+h1
+{
+    color:chocolate;
+}
+.color-list
+{
+    color:aliceblue;
+    background-color:darkblue;
+}
+#geo
+{
+    list-style-type:georgian;
+}
+ol>li /*<li> вложенный в <ol>*/  
+{
+    font-family:'Bradley Hand ITC';
+}
+ul>li
+{
+    font-family:'Blackadder ITC';
+}
