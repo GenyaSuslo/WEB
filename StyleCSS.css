@@ -1,0 +1,47 @@
+﻿body {
+    /*font-family: sans-serif;*/
+    font-family: Roboto,sans-serif;
+}
+h1, h2, h3{
+    font-weight:800;
+    color:darkblue;
+}
+p {
+    text-align-last: justify;
+    font-weight: 300;
+}
+.image
+{
+    border:solid,1px;
+    text-align:center;
+}
+div>img{
+   /* width:50%;
+    height:auto;*/
+   /*align-self:center;*/
+}
+figcaption
+{
+    font-style:italic;
+}
+.header{
+    height:50px;
+    background-color:cornflowerblue;
+    color:white;
+}
+.row-header {
+    background-color: cornflowerblue;
+    color: white;
+    width:200px;
+}
+table{
+    border:solid;
+}
+th{
+    padding-left:25px;
+    padding-right:25px;
+}
+td{
+    text-align:center;
+    border:solid,1px;
+}
