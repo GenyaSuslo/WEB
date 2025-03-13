@@ -30,18 +30,25 @@ figcaption
     color:white;
 }
 .row-header {
-    background-color: cornflowerblue;
-    color: white;
-    width:200px;
+    background-color: white;
+    color: black;
+    width:300px;
 }
-table{
-    border:solid;
+table {
+    border: solid 2px;
 }
 th{
+    border:solid,1px, black;
     padding-left:25px;
     padding-right:25px;
 }
-td{
-    text-align:center;
-    border:solid,1px;
+td {
+    text-align: center;
+    border: solid,1px, cornflowerblue;
+}
+.small-header{
+    background-color:cornflowerblue;
+    color:white;
+    width:100px;
+    column-count:auto;
 }

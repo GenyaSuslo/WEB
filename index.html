@@ -54,7 +54,7 @@
                 </li>
             </ul>
         </li>
-        <li>Общие принципы взаимодействия процессора и ОЗУ
+        <li><a href="#memory controller">Общие принципы взаимодействия процессора и ОЗУ</a>
             <ul>
                 <li><a href="#memory controller">Контроллер памяти</a></li>
                 <li><a href="#processor bus">Процессорная шина</a></li>
@@ -249,32 +249,55 @@
         Впрочем, сейчас практически никто не проверяет у процессора наличие поддержки MMX, т.к. все CPU, вышедшие за последние 10 лет, этот набор поддерживают гарантированно. Для справки приведём табличку,
         на которой обобщена информация о поддержке различных расширенных наборов команд различными десктопными (предназначенными для настольных ПК) и некоторыми мобильными процессорами.
     </p>
-    <table>
+    <table cellspacing="0">
         <caption>Таблица 1 - Дополнительные наборы команд</caption>
         <tr class="header">
             <th>Процессор</th>
             <th>Год выпуска</th>
             <th>x86-64</th>
+            <th>PPro</th>
+            <th>MMX</th>
+            <th>Версия SSE</th>
+        </tr>
+        <tr class="small-header" >
+            <td colspan="6" >Процессоры Intel</td>
         </tr>
         <tr >
             <td class="row-header">Pentium</td>
             <td>1993</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
         </tr>
         <tr >
             <td class="row-header">Pentium 4</td>
             <td>2004</td>
             <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>3</td>
         </tr>
         <tr>
             <td class="row-header">Core 2</td>
             <td>2007</td>
             <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>4.1</td>
         </tr> 
         <tr>
             <td class="row-header">Core i9</td>
             <td>2009</td>
             <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <tr class="small-header">
+                <td colspan="6">Процессоры AMD</td>
+            </tr>
         </tr>
     </table>
     <h5><a href="#table-of-content">Оглавление</a></h5>
