@@ -44,7 +44,8 @@
     </p>
 
     <ol type="I" id="table-of-content">
-        <li><a href="#intro">Введение</a>
+        <li>
+            <a href="#intro">Введение</a>
             <ul>
                 <li>
                     <a href="#general-structure">Общее устройство вычислительной машины</a>
@@ -54,11 +55,13 @@
                 </li>
             </ul>
         </li>
-        <li><a href="#memory controller">Общие принципы взаимодействия процессора и ОЗУ</a>
+        <li>
+            <a href="#memory controller">Общие принципы взаимодействия процессора и ОЗУ</a>
             <ul>
                 <li><a href="#memory controller">Контроллер памяти</a></li>
                 <li><a href="#processor bus">Процессорная шина</a></li>
-                <li><a href="#ram">Оперативная память</a>
+                <li>
+                    <a href="#ram">Оперативная память</a>
                     <ul>
                         <li><a href="#memory bus capacity">Разрядность шины памяти, N-канальные контроллеры памяти</a></li>
                         <li><a href="#write speed">Скорость чтения и записи</a></li>
@@ -67,9 +70,11 @@
                 </li>
             </ul>
         </li>
-        <li>Процессор: сведения общего характера
+        <li>
+            Процессор: сведения общего характера
             <ul>
-                <li><a href="#architecture">Понятие архитектуры</a>
+                <li>
+                    <a href="#architecture">Понятие архитектуры</a>
                     <ul>
                         <li><a href="#architecture&code">Архитектура как совместимость с кодом</a></li>
                         <li><a href="#architecture&cpu">Архитектура как характеристика семейства процессоров</a></li>
@@ -249,57 +254,76 @@
         Впрочем, сейчас практически никто не проверяет у процессора наличие поддержки MMX, т.к. все CPU, вышедшие за последние 10 лет, этот набор поддерживают гарантированно. Для справки приведём табличку,
         на которой обобщена информация о поддержке различных расширенных наборов команд различными десктопными (предназначенными для настольных ПК) и некоторыми мобильными процессорами.
     </p>
-    <table cellspacing="0">
-        <caption>Таблица 1 - Дополнительные наборы команд</caption>
-        <tr class="header">
-            <th>Процессор</th>
-            <th>Год выпуска</th>
-            <th>x86-64</th>
-            <th>PPro</th>
-            <th>MMX</th>
-            <th>Версия SSE</th>
-        </tr>
-        <tr class="small-header" >
-            <td colspan="6" >Процессоры Intel</td>
-        </tr>
-        <tr >
-            <td class="row-header">Pentium</td>
-            <td>1993</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr >
-            <td class="row-header">Pentium 4</td>
-            <td>2004</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td class="row-header">Core 2</td>
-            <td>2007</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>4.1</td>
-        </tr> 
-        <tr>
-            <td class="row-header">Core i9</td>
-            <td>2009</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>4.2</td>
-        </tr>
-        <tr>
-            <tr class="small-header">
-                <td colspan="6">Процессоры AMD</td>
+        <!--<table cellspacing="0">-->
+        <table>
+            <caption>Таблица 1 - Дополнительные наборы команд</caption>
+            <tr class="header">
+                <th>Процессор</th>
+                <th>Год выпуска</th>
+                <th>x86-64</th>
+                <th>PPro</th>
+                <th>MMX</th>
+                <th>Версия SSE</th>
             </tr>
-        </tr>
-    </table>
+            <tr class="delimiter">
+                <!--class="small-header"-->
+                <th colspan="6"> Процессоры Intel</th>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium</td>
+                <td>1993</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row-header">Pentium 4</td>
+                <td>2004</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td class="row-header">Core 2 Duo</td>
+                <td rowspan="2">2007</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.1</td>
+            </tr>
+            <tr>
+                <td class="row-header">Core 2 Quad</td>
+                <!--<td>2007</td>-->
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.1</td>
+            </tr>
+            <tr>
+                <td class="row-header">Core i9</td>
+                <td>2009</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <tr class="delimiter">
+                 <td colspan="6">Процессоры AMD</td>
+                </tr>
+            </tr>
+        </table>
+    <p>
+        На данный момент всё популярное десктопное программное обеспечение (операционные системы Windows и Linux,
+        офисные пакеты, компьютерные игры, и прочее) разрабатывается именно для x86-процессоров. Оно выполняется
+        (за исключением «дурно воспитанных» программ) на любом x86-процессоре, независимо от того, кто его произвёл.
+        Поэтому вместо ориентированных на разработчика изначальной архитектуры терминов «Intel-совместимый» или «Pentium-совместимый»,
+        стали употреблять нейтральное название: «x86-совместимый процессор», «процессор с архитектурой x86».
+        В данном случае под «архитектурой» понимается архитектура системы команд (ISA, Instruction Set Architecture) —
+        совместимость с определённым набором команд с точки зрения программиста. Есть и другая трактовка того же термина.
+    </p>
     <h5><a href="#table-of-content">Оглавление</a></h5>
 </body>
 </html>

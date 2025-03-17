@@ -24,18 +24,27 @@ figcaption
 {
     font-style:italic;
 }
-.header{
-    height:50px;
-    background-color:cornflowerblue;
-    color:white;
-}
-.row-header {
+.row-header, row-header:hover {
     background-color: white;
     color: black;
     width:300px;
+    text-align:left;
 }
+.row-header:hover{
+    font-weight:800;
+}
+/*div>table{
+
+}
+*/
+
 table {
     border: solid 2px;
+    border-spacing:0;
+    border-radius:5px;
+    align-self:center;
+    margin:0 auto;
+    box-shadow:10px 10px;
 }
 th{
     border:solid,1px, black;
@@ -46,9 +55,30 @@ td {
     text-align: center;
     border: solid,1px, cornflowerblue;
 }
-.small-header{
+td:hover{
+    background-color:cadetblue;
+    color:aliceblue;
+}
+tr:hover {
+    background-color: deepskyblue;
+    color: aliceblue;
+    font-weight:800;
+}
+/*.small-header{
     background-color:cornflowerblue;
     color:white;
     width:100px;
     column-count:auto;
+}*/
+.header, .delimiter, .header:hover, .delimiter:hover{
+    background-color:cornflowerblue;
+    color:white;
+    /*height:50px;*/
+    
+}
+.header{
+    height:50px;
+}
+.delimiter{
+    color:blueviolet;
 }
