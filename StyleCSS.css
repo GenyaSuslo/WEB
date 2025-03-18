@@ -2,9 +2,10 @@
     /*font-family: sans-serif;*/
     font-family: Roboto,sans-serif;
 }
-h1, h2, h3{
-    font-weight:800;
-    color:darkblue;
+h1, h2, h3 {
+    font-weight: 800;
+    color: darkblue;
+    text-shadow: 25px 15px 2px blue, -25px -15px 2px green;
 }
 p {
     text-align-last: justify;
@@ -44,7 +45,10 @@ table {
     border-radius:5px;
     align-self:center;
     margin:0 auto;
-    box-shadow:10px 10px;
+}
+table:hover{
+    box-shadow: -25px -15px 25px 25px grey;
+
 }
 th{
     border:solid,1px, black;
@@ -70,15 +74,23 @@ tr:hover {
     width:100px;
     column-count:auto;
 }*/
-.header, .delimiter, .header:hover, .delimiter:hover{
-    background-color:cornflowerblue;
-    color:white;
+.header, .delimiter, .header:hover, .delimiter:hover {
+    background-color: cornflowerblue;
+    color: white;
     /*height:50px;*/
-    
 }
+.header:hover, .delimiter:hover {
+    box-shadow:inset 0px -5px 15px 0 green;
+
+    }
 .header{
     height:50px;
 }
 .delimiter{
     color:blueviolet;
+}
+.cite{
+    text-align:right;
+    margin-left:50px;
+    font-weight:100;
 }
